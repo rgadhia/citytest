@@ -8,6 +8,6 @@ public class VersionController {
 
     @RequestMapping("/version")
     public String index() {
-        return "Greetings Universal City!";
+        return "Greetings Rainy Night!";
     }
 }
