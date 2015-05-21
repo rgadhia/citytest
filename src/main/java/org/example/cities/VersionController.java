@@ -1,3 +1,4 @@
+
 package org.example.cities;
 
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -8,6 +9,6 @@ public class VersionController {
 
     @RequestMapping("/version")
     public String index() {
-        return "Greetings Sunshine!";
+        return "Greetings Sunshine of my life!";
     }
 }
