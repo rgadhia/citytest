@@ -55,7 +55,7 @@ cloudfoundry {
     }*/
 
     // required for PCF deployment, not required for PWS
-    //trustSelfSignedCerts = true
+    trustSelfSignedCerts = true
 }
 
 /*jar {
@@ -84,3 +84,5 @@ dependencies {
 task wrapper(type: Wrapper) {
     gradleVersion = '1.12'
 }
+
+mainClassName = 'org.example.cities.Application'
