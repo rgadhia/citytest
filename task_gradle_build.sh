@@ -1,3 +1,3 @@
 #!/bin/sh
-
-gradle build
+export TERM=${TERM:-dumb}
+./gradlew build
