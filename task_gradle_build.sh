@@ -4,6 +4,6 @@ echo "Build Starting!"
 
 
 export TERM=${TERM:-dumb}
-./gradlew build
+gradle build
 
 echo "Build Complete!"
