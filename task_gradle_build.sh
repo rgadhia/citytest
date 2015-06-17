@@ -6,8 +6,9 @@ echo "Build Starting!"
 export TERM=${TERM:-dumb}
 gradle build
 
-find .
+rm build/libs/cities-0.0.1-SNAPSHOT.jar.original
 
-cp build/libs/cities-0.0.1-SNAPSHOT.jar .
+find . 
+
 
 echo "Build Complete!"
