@@ -58,10 +58,10 @@ cloudfoundry {
     trustSelfSignedCerts = true
 }
 
-/*jar {
+jar {
     baseName = 'cities'
     version =  '0.0.1-SNAPSHOT'
-} */
+}
 
 repositories {
     mavenCentral()
