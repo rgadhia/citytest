@@ -1,0 +1,9 @@
+platform: linux
+image: docker:///bamdad/jdk8-gradle
+
+inputs:
+- name: citytest
+  path: ../citytest
+
+run:
+  path: ./task_gradle_build.sh
