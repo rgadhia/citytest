@@ -1,9 +1,0 @@
-platform: linux
-image: docker:///ubuntu#14.04
-
-inputs:
-- name: citytest
-  path: .
-
-run:
-  path: ./task_gradle_build.sh
