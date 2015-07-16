@@ -2,6 +2,7 @@
 
 echo "Build Starting!"
 
+echo $@
 
 export TERM=${TERM:-dumb}
 gradle build
