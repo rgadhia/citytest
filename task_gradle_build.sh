@@ -10,6 +10,7 @@ release_version=$(cat app-version/number)
 
 
 echo $@
+echo $release_version
 
 export TERM=${TERM:-dumb}
 gradle build
