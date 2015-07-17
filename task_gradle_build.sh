@@ -17,7 +17,7 @@ applications:
 - name: citytest
   memory: 512M 
   instances: 1
-  host: citytest-$release-version
+  host: citytest-${release_version}
   path: cities-0.0.1.jar
   env:
    JAVA_OPTS: -Djava.security.egd=file:///dev/urandom 
