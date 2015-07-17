@@ -20,5 +20,20 @@ rm build/libs/cities-0.0.1-SNAPSHOT.jar.original
 
 find . 
 
+echo  "---
+applications:
+- name: citytest
+  memory: 512M 
+  instances: 1
+  host: citytest-${release-version}
+  path: cities-0.0.1.jar
+  env:
+   JAVA_OPTS: -Djava.security.egd=file:///dev/urandom 
+" >> manifest.yml
+
+
+
 
 echo "Build Complete!"
+
+
