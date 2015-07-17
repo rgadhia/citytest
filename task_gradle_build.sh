@@ -12,12 +12,15 @@ release_version=$(cat app-version/number)
 echo $@
 echo $release_version
 
+$cf_version=${release_version//./-}
+
+
 echo  "---
 applications:
 - name: citytest
   memory: 512M 
   instances: 1
-  host: citytest-${release_version}
+  host: citytest-${cf_version}
   path: cities-0.0.1.jar
   env:
    JAVA_OPTS: -Djava.security.egd=file:///dev/urandom 
