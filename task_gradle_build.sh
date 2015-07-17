@@ -16,7 +16,7 @@ export TERM=${TERM:-dumb}
 gradle build
 
 rm build/libs/cities-0.0.1-SNAPSHOT.jar.original
-mv build/libs/cities-0.0.1-SNAPSHOT.jar build/libs/cities-${release_version}-SNAPSHOT.jar 
+#mv build/libs/cities-0.0.1-SNAPSHOT.jar build/libs/cities-${release_version}-SNAPSHOT.jar 
 
 find . 
 
