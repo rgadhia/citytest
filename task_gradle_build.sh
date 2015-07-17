@@ -12,7 +12,7 @@ release_version=$(cat app-version/number)
 echo $@
 echo $release_version
 
-$cf_version=${release_version//./-}
+deploy_version=${release_version//./-}
 
 
 echo  "---
@@ -20,14 +20,13 @@ applications:
 - name: citytest
   memory: 512M 
   instances: 1
-  host: citytest-${cf_version}
+  host: citytest-${deploy_version}
   path: cities-0.0.1.jar
   env:
    JAVA_OPTS: -Djava.security.egd=file:///dev/urandom 
 " > manifest.yml
 
 cat manifest.yml
-
 
 export TERM=${TERM:-dumb}
 gradle build
