@@ -17,7 +17,7 @@ deploy_version=${release_version//./-}
 
 echo  "---
 applications:
-- name: citytest
+- name: citytest-${deploy_version}
   memory: 512M 
   instances: 1
   host: citytest-${deploy_version}
