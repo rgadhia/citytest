@@ -29,9 +29,9 @@ applications:
   path: cities-0.0.1.jar
   env:
    JAVA_OPTS: -Djava.security.egd=file:///dev/urandom 
-" >> manifest.yml
+" > manifest.yml
 
-
+cat manifest.yml
 
 
 echo "Build Complete!"
